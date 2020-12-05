@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<title>RECIPE INDEX</title>
+    <body>
+    <%@recipes.each do |recipe|%>
+        <a href="/recipes/<%=recipe.id%>">
+        <%=recipe.name%><br>
+        <%=recipe.ingredients%><br>
+        <%=recipe.cook_time%><br>
+    <%end%>
+    </body>
+</html>
